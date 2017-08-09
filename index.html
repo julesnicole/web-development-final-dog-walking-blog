@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #4ddbff;
+}
+
+li {
+   float: left;
+   border-right:1px solid #bbb;
+}
+
+li:last-child {
+   border-right: none;
+}
+
+li a {
+   display: block;
+   color: #ff3333;
+   text-align: center;
+    padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover:not(.active) {
+   background-color: #111;
+}
+
+.active {
+   background-color: #4CAF50;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<ul>
+ <li><a href="index.html">home</a></li>
+ <li><a href="videos.html">videos</a></li>
+  <li><a href="contact.html">contact</a></li>
+</ul>
+
+
+
+
+
+
+
+
+<html>
+<title>Julie's dog-walking blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-red">
+
+
+
+
+
+
+
+
+
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b> Dog-Walking Adventures</b></h1>
+    <h6>Welcome to the blog of <span class="w3-tag">Julie's</span></h6>
+  </header>
+
+
+
+
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="header.jpg" alt="dog-walking Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Julie's blog</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b></b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+
+
+
+
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ZING</h3>
+          <h5>Coolest dog I met , <span class="w3-opacity">July 27, 2017</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="zing.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong></strong>We went there on a weekday evening, around dusk and there were only a handful of dogs playing there. After about 30 minutes we pretty much had the whole beach to ourselves and the dogs made full use of the space. This is not a big beach and really is tiny compared to Montrose, but it's a great change of pace and definitely has enough space for maybe 15 dogs to run free and play up and down the sand.
+ </p>
+          <p></p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>George <span class="w3-opacity w3-medium">july 27, 2017, 6:32 PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>WILLA</h3>
+          <h5>Cutest Maltese, <span class="w3-opacity">July 28,2017</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="willa.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <p><strong></strong> While the dogs we walk love us and we love them and they love seeing us every day, they know we're just there as their friends and not their permanent family members. We do love seeing those wiggle butts, dog smiles and the little dances they do when we come in, but I've brought dogs back to their owners after walks and they go running to them, full wiggle butt mode! </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_train.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">July 28,2017, 2015, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="aboutme.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>JULIE </h4>
+          <p>Hello friends. Julie here. I’m going to be writing today’s blog and hopefully illuminating what goes on in a day in the life of a dog walker. I’d like to shed some light on the decision making process, how I plan and prepare, how I interact with our dogs and a few situations we may or may not have to handle when we’re out “on the dog trail.” Yes, we do get to play with puppies, and yes it is awesome, but there’s a lot more to it than romping with some fresh pups!</p>
+        </div>
+      </div>
+      <hr>
+
+
+
+
+      <!-- pictures -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>My babies</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="forbes.jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="cookie.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="fiona.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="colby.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">julie's webdesign</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
